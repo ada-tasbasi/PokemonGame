@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#msgWindow{
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+}
+
+#msgTxt{
+  margin: 1em;
+}
+
+#container{
+  display: flex;
+  height: 95vh;
+}
+
+#test{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+

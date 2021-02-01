@@ -1,0 +1,47 @@
+#ToolboxContainer{
+  width: 14%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #F08080;
+  border-right: solid rgb(197, 53, 53) 0.5vh;
+}
+
+.row{
+height: 99vh;
+width: 100%;
+font-size: 20px;
+color: aliceblue;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+margin: auto;
+text-align: center;
+}
+
+.icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.icon:hover{
+  opacity: 0.8;
+}
+
+#startBtn{
+  padding: 1em;
+  border: solid crimson 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: cornsilk;
+}
+
+#startBtn:hover{
+  border: solid white 3px;
+}
