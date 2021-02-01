@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Icon from './Icon'
 import './Toolbox.css'
 import {useSelector, useDispatch} from 'react-redux'
-import {changeIsDragging, setDraggedPoke, setSimStart, setMessage} from './actions'
+import {changeIsDragging, setDraggedPoke, setSimStart, setMessage} from '../actions'
 
 const Toolbox = ({iconList}) =>{
 

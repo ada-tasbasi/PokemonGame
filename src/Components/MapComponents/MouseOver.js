@@ -1,5 +1,5 @@
 import {useSelector, useDispatch} from 'react-redux'
-import {changeIsDragging, setMarkerList} from './actions'
+import {changeIsDragging, setMarkerList} from '../../actions'
 import {useMapEvents} from 'react-leaflet'
 
 const  MouseOver = ({callBack})=> {

@@ -3,7 +3,7 @@ import { MapContainer, TileLayer} from 'react-leaflet'
 import DraggableMarker from './DraggableMarker'
 import MouseOver from './MouseOver'
 import './Map.css'
-import {useSelector, useDispatch} from 'react-redux'
+import {useSelector} from 'react-redux'
 
 const Map = () =>{
   const markerList = useSelector(state=>state.markerList)

@@ -1,0 +1,35 @@
+label{
+  font-size: 15px;
+}
+
+#map{
+  height:95vh;
+  width: 100%;
+}
+
+#subBtn{
+  margin: 3px 30%;
+}
+
+.popBtn{
+  background-color: salmon;
+  border: red solid 2px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.popBtn:hover{
+  background-color: brown;
+}
+
+#pokeStats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+#closeBtn{
+  cursor: pointer;
+  color: red;
+}

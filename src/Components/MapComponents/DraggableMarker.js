@@ -2,7 +2,7 @@ import React, {useState, useRef, useMemo} from 'react'
 import {Marker, Popup} from 'react-leaflet'
 import L from 'leaflet'
 import {useSelector, useDispatch} from 'react-redux'
-import {setPokemonStats, setMarkerList, setTurnInfo, setMessage ,setAttackMode, setAttacker, setDefender} from './actions'
+import {setPokemonStats, setMarkerList, setTurnInfo, setMessage ,setAttackMode, setAttacker, setDefender} from '../../actions'
 
 const nameList = ["Charmander", "Bullbasaur", "Eevee", "Psyduck", "Snorlax", "Meowth"]
 
@@ -200,8 +200,8 @@ const DraggableMarker = ({icon, pos, pokeId, faction}) =>{
               <button onClick={handleAttackOrder}>Attack This Pokemon!</button>
               </div> :  
               simIsStarted&&<div id ="orderBtns">
-                <button onClick={handleMove}>Move</button>      
-                <button onClick={handleAttack}>Attack</button>   
+                <button className = "popBtn" onClick={handleMove}>Move</button>      
+                <button className = "popBtn" onClick={handleAttack}>Attack</button>   
               </div>}
           </div>
         </Popup>):
@@ -220,7 +220,7 @@ const DraggableMarker = ({icon, pos, pokeId, faction}) =>{
           <label>Defense Power
           <input type="number" id="def" name="DefPower" onChange={handleChange} value={defVal}/>
           </label><br/>
-          <button onClick={buttonClick}>Submit Stats</button>
+          <button className = "popBtn" id="subBtn" onClick={buttonClick}>Submit Stats</button>
         </Popup>)
        }
     </Marker>
